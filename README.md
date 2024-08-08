@@ -57,8 +57,4 @@ if no：
 - `scikit-learn`
 - 其他可能的依赖（请在代码中检查）
 
-你可以使用以下命令来安装依赖：
-
-```bash
-pip install -r requirements.txt
 
