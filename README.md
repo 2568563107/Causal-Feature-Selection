@@ -3,8 +3,8 @@
 
 ## 项目结构
 
-- `benchmark_BN/`: 包含用于基准数据集的代码。
-- `RealWorld_datasets/`: 包含用于真实世界数据集的代码。
+- `benchmark_BN`: 包含用于基准数据集的代码。
+- `RealWorld_datasets`: 包含用于真实世界数据集的代码。
 
 ## 使用说明
 
