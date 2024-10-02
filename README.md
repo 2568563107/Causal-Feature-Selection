@@ -1,4 +1,4 @@
-# Causal Feature Selection via Adaptive Scaling Method (ASD) $G^2$-Test
+# Causal Feature Selection via Adaptive Scaling Down (ASD) $G^2$-Test
 本项目实现了一种改进的 $G^2$-test，用于因果特征选择。我们的方法通过IDOF和ASM提升了特征选择的准确性和效率。该方法适用于离散数据集。
 
 ## 项目结构
