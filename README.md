@@ -1,60 +1,60 @@
 # Causal Feature Selection via Adaptive Scaling Down (ASD) $G^2$-Test
-本项目实现了一种改进的 $G^2$-test，用于因果特征选择。我们的方法通过IDOF和ASM提升了特征选择的准确性和效率。该方法适用于离散数据集。
+This project implements an ASD $G^2$-test for causal feature selection algorithms. Compared to classical $G^2$-test, the ASD $G^2$-test significantly enhances the accuracy and robustness of feature selection.
 
-## 项目结构
+## Project Structure
 
-- `benchmark_BN`: 包含用于基准数据集的代码。
-- `RealWorld_datasets`: 包含用于真实世界数据集的代码。
+- `benchmark_BN`: Contains code for running on benchmark datasets.
+- `RealWorld_datasets`: Contains code for running on real-world datasets.
 
-## 使用说明
+## Instructions for Use
 
-### 基准数据集
+### Benchmark Datasets
 
-要运行benchmark_BN数据，请在运行benchmark_BN文件夹中的main.py
+To run the benchmark_BN data, go to the benchmark_BN folder and run main.py
 
-此时请先输入你想运行的benchmark_BN名称，分别有alarm，barley，child，insurance，munin1，pigs
+First, enter the name of the benchmark dataset you wish to run. The available datasets are: alarm, barley, child, insurance, munin1, pigs.
 
-然后再选择是否使用original datasets，请选择yes，no
+Then, choose whether to use the original datasets by selecting yes or no.
 
 if yes：
 
-    如果选择original datasets，请选择样本量1000，2000，5000
+    Choose the sample size: 1000, 2000, 5000.
     
-    选择MB发现算法，"IAMB", "MMMB", "FBEDk", "HITON-MB", "STMB", "MBOR", "BAMB"
+    Select the MB discovery algorithm: "IAMB", "MMMB", "FBEDk", "HITON-MB", "STMB", "MBOR", "BAMB".
     
-    选择CI test，选择1-5，G2test=1,G2test_IDOF=2,G2test_IDOF_ASM=3,chi-squared test=4,fisher_z test=5
+    Select the CI test: Choose 1-4: classical G2test=1,ASD G2test=2,chi-squared test=3,fisher_z test=4.
 
-    运行产生结果
+    Run to generate results.
     
 if no：
 
-    选择样本量，生成新数据
+    Enter the sample size to generate new data.
     
-    选择MB发现算法，"IAMB", "MMMB", "FBEDk", "HITON-MB", "STMB", "MBOR", "BAMB"
+    Select the MB discovery algorithm: "IAMB", "MMMB", "FBEDk", "HITON-MB", "STMB", "MBOR", "BAMB".
     
-    选择CI test，选择1-5，G2test=1,G2test_IDOF=2,G2test_IDOF_ASM=3,chi-squared test=4,fisher_z test=5
+    Select the CI test: Choose 1-4: classical G2test=1,ASD G2test=2,chi-squared test=3,fisher_z test=4.
 
-    运行产生结果
+    Run to generate results.
 
-### 真实世界数据集
+### Real-World Datasets
 
-要运行RealWorld_datasets,请在运行RealWorld_datasets文件夹中的main.py
+To run the RealWorld_datasets, go to the RealWorld_datasets folder and run main.py:
 
-此时请先输入你想运行的RealWorld_datasets，分别有"breast-cancer", "chess", "cmc", "congress", "mushroom", "splice"
+Enter the name of the real-world dataset you wish to run. The available datasets are: "breast-cancer", "chess", "cmc", "congress", "mushroom", "splice".
 
-然后选择MB发现算法，"IAMB", "MMMB", "FBEDk", "HITON-MB", "STMB", "MBOR", "BAMB"
+Select the MB discovery algorithm: "IAMB", "MMMB", "FBEDk", "HITON-MB", "STMB", "MBOR", "BAMB".
 
-选择CI test，选择1-5，G2test=1,G2test_IDOF=2,G2test_IDOF_ASM=3,chi-squared test=4,fisher_z test=5
+Select the CI test: Choose 1-4: classical G2test=1,ASD G2test=2,chi-squared test=3,fisher_z test=4.
 
-运行产生结果
+Run to generate results.
 
-## 依赖
+## Dependencies
 
-请确保你已经安装了以下 Python 库：
+Make sure you have installed the following Python libraries:
 
 - `numpy`
 - `pandas`
 - `scikit-learn`
-- 其他可能的依赖（请在代码中检查）
+- Additional dependencies might be required. Please check the code for further dependencies.
 
 
